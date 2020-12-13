@@ -1,6 +1,8 @@
 .services{
     position: relative;
-    .container-services{
+
+    ////////////////////////////////////////////////////// CONTENT
+    .container-services{  
         top: -10px;
         position: absolute;
         .container-cards{
@@ -53,5 +55,37 @@
             }
         }
     }
-    
+    ////////////////////////////////////////////////////// CONTENT-IMG
+    .content-img{
+        background-color: #f2f4f1;
+        position: relative; 
+        height: 100vh;
+        .bar-color{
+            position: absolute;
+            background-color: #343434;
+            height: 100%;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .container-content-img{
+            position: absolute;
+            z-index: 2;
+            height: 530px;
+            max-height: 550px;
+            background-image: url(../img/image-2.png);
+            top: 50%;  
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .container-slider{
+                position: absolute;
+                background-color:#E0752F;
+                width: 435px;
+                height: 270px;
+                z-index: 3;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
 }
