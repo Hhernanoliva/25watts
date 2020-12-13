@@ -1,0 +1,42 @@
+.services {
+  position: relative; }
+  .services .container-services {
+    top: -10px;
+    position: absolute; }
+    .services .container-services .container-cards {
+      position: absolute;
+      flex-wrap: nowrap; }
+      .services .container-services .container-cards .card-service {
+        box-shadow: 0px 4px 24px #DCE1DAE6;
+        padding: 0 20px;
+        border-bottom: solid 8px #e0752f;
+        margin: 0 12.5px;
+        max-width: 250px;
+        min-height: 264px;
+        max-height: 265px;
+        background-color: #fff; }
+      .services .container-services .container-cards img {
+        margin-top: 45px;
+        padding-bottom: 30px;
+        width: 60px;
+        height: 90px; }
+      .services .container-services .container-cards p {
+        font-weight: 600;
+        font-size: 21px; }
+  .services .services-content {
+    border-left: #e0752f solid 30px; }
+    .services .services-content .container-content {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      max-width: 770px; }
+      .services .services-content .container-content h2 {
+        letter-spacing: 0.55px;
+        color: #343434;
+        font-size: 40px;
+        line-height: 43px; }
+        .services .services-content .container-content h2 span {
+          color: #E0752F; }
+      .services .services-content .container-content article {
+        margin-top: 45px;
+        font-size: 16px;
+        max-width: 770px; }
