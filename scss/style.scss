@@ -4,6 +4,7 @@
 @import './product';
 @import './contact';
 @import './footer';
+@import './hero';
 input:focus, textarea:focus, select:focus{
     outline: none;
     box-shadow: none;
@@ -19,13 +20,6 @@ html, body {
 body {
     font-family: "Helvetica Neue",sans-serif;
     font-weight: lighter;
-}
-
-header { 
-    width: 100%;
-    height: 100vh;
-    background: url(/img/slide1-background.png) no-repeat 50% 50%;
-    background-size: cover;
 }
 
 nav.black ul {
@@ -72,4 +66,11 @@ button:focus{
   }
   .arrow-down{
       opacity: 1
+  }
+
+
+  .acordion{
+    height: 100vh;
+    
+
   }

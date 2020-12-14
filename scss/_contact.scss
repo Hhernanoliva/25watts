@@ -22,8 +22,8 @@
                 padding: 0;
                .card-form{
                    padding: 40px 80px 80px 80px;
-                   .title{
-                       padding-bottom: 40px;
+                    .title{
+                        padding-bottom: 40px;
                         h2{
                             letter-spacing: 0.55px;
                             color: #343434;
@@ -33,7 +33,13 @@
                                 color: #E0752F;
                             }
                         }
-                   }
+                    }
+                    .error{
+                        color: #E0752F;
+                        font-size: 20px;
+                        margin: 0 0 15px 0;
+                        text-transform: uppercase;
+                    }
                    form{
                        width: 100%;
                        .form-control:focus{

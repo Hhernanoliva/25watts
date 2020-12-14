@@ -18,7 +18,7 @@ $(window).on("scroll", function() {
 
 
 
-///ACCORDION
+//ACCORDION
 let acc = document.querySelectorAll(".accordion");
 let i;
 
@@ -34,6 +34,28 @@ acc[i].addEventListener("click", function() {
 });
 }
 
-let arrow = document.querySelectorAll(".arrow-acc");
+//GLIDER
+new Glide('.glide').mount()
+new Glide('.glide-hero').mount()
 
-});
+//VALIDATION
+const name = document.getElementById('name')
+const phone = document.getElementById('phone')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (name.value === '' || name.value == null) {
+    messages.push('Name is required')
+  }
+
+  if (phone.value.typeof != Number) {
+    messages.push('The phone must put it in number')
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ')
+  }
+})
