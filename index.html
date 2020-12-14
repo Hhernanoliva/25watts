@@ -38,41 +38,42 @@
 
             </section>
 
-            <section class="services">
-
-                <!-- CARDS -->
-                <div class=" col-12 d-flex justify-content-center container-services">
+            <!-- ABOUT / CARDS -->
+            <section class="about">
+                <div class=" col-12 d-flex justify-content-center container-maincard">
                     <div class="container col-12 d-flex justify-content-center row container-cards">
-                        <div class="col-3 d-flex justify-content-center flex-column text-center card-service">
+                        <div class="col-3 d-flex justify-content-center flex-column text-center card-content">
                             <div class="container">
                                 <img src="/img/Icon awesome-globe-americas.svg" alt="">
                             </div>
 
                             <p>Stet clita kasd gubergren</p>
                         </div>
-                        <div class="col-3 d-flex justify-content-center flex-column text-center card-service">
+                        <div class="col-3 d-flex justify-content-center flex-column text-center card-content">
                             <div class="container">
                                 <img src="/img/Icon awesome-cloud-upload-alt.svg" alt="">
                             </div>
                             <p>At vero eos et accusam</p>
                         </div>
-                        <div class="col-3 d-flex justify-content-center flex-column text-center card-service">
+                        <div class="col-3 d-flex justify-content-center flex-column text-center card-content">
                             <div class="container">
                                 <img src="/img/Icon awesome-headset.svg" alt="">
                             </div>
                             <p>Sed ut perspiciatis unde</p>
                         </div>
-                        <div class="col-3 d-flex justify-content-center flex-column text-center card-service">
+                        <div class="col-3 d-flex justify-content-center flex-column text-center card-content">
                             <div class="container">
                                 <img src="/img/Icon awesome-user-friends.svg" alt="">
                             </div>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p id="about">Lorem ipsum dolor sit amet</p>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- CONTENT -->
-                <div class="col-12 d-flex justify-content-center" style=" padding-top: 430px; padding-bottom: 200px;">
+            <!--ABOUT / CONTENT-->
+            <section class="about">
+                <div class="col-12 d-flex justify-content-center" style="padding-top: 430px; padding-bottom: 200px;">
                     <div class="col-12 services-content ">
                         <div class="container container-content">
                             <h2>We Help Businesses <br> <span>Grow and Innovate</span></h2>
@@ -91,89 +92,102 @@
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- CONTENT-IMAGE -->
+            <!-- SERVICES -->
+            <section class="col-12 content-img d-flex justify-content-center services" id="services">
+                <div class="col-4 bar-color"></div>
+                <div class="container-content-img col-7">
+                    <div class="container container-slider">
+                        SLIDER TEXT
+                    </div>
+                </div>
+            </section>
 
-                <div class="col-12 content-img d-flex justify-content-center">
-                    <div class="col-4 bar-color"></div>
-                    <div class="container-content-img col-7">
-                        <div class="container container-slider">
-                            SLIDER TEXT
+            <!-- PRODUCT -->
+            <section class="product col-12 row" id="product">
+                <div class="col-5 product-left"></div>
+                <div class="col-7 product-right "></div>
+                <div class="container-product">
+
+                    <a class="accordion">Sed ut perspiciatis <span class="arrow-acc"><img src="./img/Icon feather-chevron-down.svg"
+                                alt=""><img class="arrowToggle" src="./img/Icon feather-chevron-up.svg" alt=""> </span></a>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <a class="accordion">Sed ut perspiciatis <span class="arrow-acc"><img src="./img/Icon feather-chevron-down.svg"
+                                alt=""><img class="arrowToggle" src="./img/Icon feather-chevron-up.svg" alt=""> </span></a>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <a class="accordion">Sed ut perspiciatis <span class="arrow-acc"><img src="./img/Icon feather-chevron-down.svg"
+                                alt=""><img class="arrowToggle" src="./img/Icon feather-chevron-up.svg" alt=""> </span></a>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section class="col-12 d-flex justify-content-center container-contact" id="contact">
+                <div class="col-4 bar-color"></div>
+                <div class="container-form col-10 row">
+                    <div class="col-6 form-left">
+                        <div class="card-form">
+                            <div class="title">
+                                <h2>Get in touch <br> <span> We are hiring! </span></h2>
+                            </div>
+                            <form class="col-12">
+                                <div class="form-group row">
+                                    <input class="form-control form-box" type="text" id="example-text-input"
+                                        placeholder="Name">
+                                </div>
+                                <div class="form-group row">
+                                    <input class="form-control form-box" type="email" id="example-email-input"
+                                        placeholder="info@25watt.com.ar">
+                                </div>
+                                <div class="form-group row">
+                                    <input class="form-control form-box" type="number" id="example-number-input"
+                                        placeholder="Number">
+                                </div>
+                                <div class="menssage form-group row">
+                                    <textarea class="form-control form-box" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Menssage"></textarea>
+                                </div>
+                            </form>
+                            <button onclick="this.blur();">Send</button>
+                        </div>
+                    </div>
+                    <div class="col-6 form-right ">
+                        <div class="form-img">
+                            <img src="./img/image.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <!-- Collapse
-            <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                Collapsible Group Item #1
-                            </button>
-                        </h5>
-                    </div>
+            </section>
 
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
+            <!-- FOOTER -->
+            <section class="footer" id="footer">
+                <div class="copyright">
+                    <p>2020 © All rights reserved.</p>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
+                <div class="logo-footer">
+                    <img src="./img/logo_25w.svg" alt="">
                 </div>
+            </section>
+
+            <!-- Collapse
+            
 
                 <section class="footer">
-                    <form>
-                       
-                        <div class="form-group row">
-                            <input class="form-control" type="text" id="example-text-input" placeholder="Name">
-                        </div>
-                     
-                        <div class="form-group row">
-                            <input class="form-control" type="email" id="example-email-input"
-                                placeholder="info@25watt.com.ar">
-                        </div>
-
-                      
-                        <div class="form-group row">
-                            <input class="form-control" type="number" id="example-number-input" placeholder="Number">
-                        </div>
-
-                 
-                        <div class="menssage">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                placeholder="Menssage"></textarea>
-                        </div>
-                    </form>
+                    
 
             
                     <button>Send</button>
@@ -188,8 +202,11 @@
     </div> -->
 
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+                integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+                integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
                 crossorigin="anonymous"></script>
             <script src="./js/app.js"></script>
 </body>

@@ -17,20 +17,23 @@ $(window).on("scroll", function() {
 })
 
 
-//scrolpsy
-// In-view function
-const handleView = item => {
-    const linkEl = document.querySelector(`#link-${item}`);
-      
-    let offsetHeight = 0.6*(window.innerHeight)
-    inView.offset({
-      bottom:offsetHeight
-    });
-    
-    inView(`#${item}`)
-      .on("enter", () => linkEl.classList.add('is-active'))
-      .on("exit", el  => linkEl.classList.remove('is-active'))
-  };
-  
-  // Apply method on each DOM element 
-  ["one", "two", "three", "four", "five", "six"].forEach(handleView);
+
+///ACCORDION
+let acc = document.querySelectorAll(".accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  let panel = this.nextElementSibling;
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+  } else {
+    panel.style.display = "block";
+  }
+});
+}
+
+let arrow = document.querySelectorAll(".arrow-acc");
+
+});
