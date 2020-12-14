@@ -92,4 +92,16 @@
             }
         }
     }
+    //DESKTOP
+    @include respon(desktop){ 
+
+    }
+    //TABLET
+    @include respon(tablet){ 
+
+    }
+    //MOBILE
+    @include respon(mobile){ 
+        
+    }
 } 

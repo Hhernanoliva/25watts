@@ -1,6 +1,5 @@
 
 nav{
-    
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -58,6 +57,23 @@ nav{
     a:hover {
         color: #fff;
     }
+
+    //DESKTOP
+    @include respon(desktop){ 
+
+    }
+    //TABLET
+    @include respon(tablet){ 
+
+    }
+    //MOBILE
+    @include respon(mobile){ 
+        
+    }
+
+
+
+    //CORREGIR
     @media(max-width: 786px) {
     
         .logo {

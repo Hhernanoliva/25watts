@@ -15,4 +15,16 @@
     .logo-footer{
         padding: 0 80px;
     }
+    //DESKTOP
+    @include respon(desktop){ 
+
+    }
+    //TABLET
+    @include respon(tablet){ 
+
+    }
+    //MOBILE
+    @include respon(mobile){ 
+        
+    }
 }
