@@ -26,7 +26,7 @@
             p{
                 font-weight: 600;
                 font-size: 21px;
-    
+                font-family: 'Poppins', sans-serif;
             }
         }
     }
@@ -142,6 +142,7 @@
             border-left: #e0752f solid 30px;
             .container-content{
                 h2{
+                    font-family: 'Poppins', sans-serif;
                     letter-spacing: 0.55px;
                     color: #343434;
                     font-size: 40px;
@@ -151,6 +152,7 @@
                     }
                 }
                 article{
+                    font-family: 'Roboto', sans-serif;
                     margin-top: 45px;
                     font-size: 16px;
                     max-width: 770px;

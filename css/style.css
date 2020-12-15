@@ -22,7 +22,8 @@
         height: 90px; }
       .about-cards .container-maincard .container-cards p {
         font-weight: 600;
-        font-size: 21px; }
+        font-size: 21px;
+        font-family: 'Poppins', sans-serif; }
   @media (min-width: 992px) {
     .about-cards {
       position: relative; }
@@ -114,6 +115,7 @@
   .about .about-container .about-content {
     border-left: #e0752f solid 30px; }
     .about .about-container .about-content .container-content h2 {
+      font-family: 'Poppins', sans-serif;
       letter-spacing: 0.55px;
       color: #343434;
       font-size: 40px;
@@ -121,6 +123,7 @@
       .about .about-container .about-content .container-content h2 span {
         color: #E0752F; }
     .about .about-container .about-content .container-content article {
+      font-family: 'Roboto', sans-serif;
       margin-top: 45px;
       font-size: 16px;
       max-width: 770px; }
@@ -201,7 +204,8 @@
 nav {
   position: fixed;
   z-index: 10;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Roboto', sans-serif; }
   nav .menu-icon {
     width: 100%;
     text-align: right;
@@ -419,11 +423,14 @@ nav {
             .services .container-content-img .container-slider .glide .glide__track ul li h3 {
               font-size: 14px;
               padding: 0;
-              margin: 0; }
+              margin: 0;
+              font-family: 'Roboto', sans-serif; }
             .services .container-content-img .container-slider .glide .glide__track ul li h2 {
+              font-family: 'Poppins', sans-serif;
               font-size: 31px;
               margin: 0 0 20px 0; }
             .services .container-content-img .container-slider .glide .glide__track ul li article {
+              font-family: 'Roboto', sans-serif;
               font-size: 14px;
               max-width: 300px; }
   @media (min-width: 992px) {
@@ -539,6 +546,7 @@ nav {
                 font-size: 14px; } }
 
 .product {
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
   position: relative;
   margin: 0; }
@@ -639,7 +647,8 @@ nav {
             letter-spacing: 0.55px;
             color: #343434;
             font-size: 40px;
-            line-height: 43px; }
+            line-height: 43px;
+            font-family: 'Poppins', sans-serif; }
             .container-contact .container-form .form-left .card-form .title h2 span {
               color: #E0752F; }
         .container-contact .container-form .form-left .card-form .error {
@@ -648,6 +657,7 @@ nav {
           margin: 0 0 15px 0;
           text-transform: uppercase; }
         .container-contact .container-form .form-left .card-form form {
+          font-family: 'Roboto', sans-serif;
           width: 100%; }
           .container-contact .container-form .form-left .card-form form .form-control:focus {
             border-color: #cccccc;
@@ -663,8 +673,10 @@ nav {
             background-color: #f2f4f1;
             border-bottom: solid 2px #dce1da;
             padding: 5px 0;
-            margin: 7px 0; }
+            margin: 7px 0;
+            font-family: 'Roboto', sans-serif; }
         .container-contact .container-form .form-left .card-form button {
+          font-family: 'Roboto', sans-serif;
           border: none;
           margin: 0;
           padding: 0;
@@ -831,6 +843,7 @@ nav {
         width: 0; } }
 
 .footer {
+  font-family: 'Roboto', sans-serif;
   background-color: #343434;
   height: 100px;
   display: flex;
@@ -888,7 +901,14 @@ nav {
             position: absolute;
             color: white;
             z-index: 2; }
+            .hero .glide-hero .hero-track .hero-slides .hero-slide .content-hero h1 {
+              font-family: 'Poppins', sans-serif;
+              font-weight: 700; }
+            .hero .glide-hero .hero-track .hero-slides .hero-slide .content-hero h2 {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 300; }
             .hero .glide-hero .hero-track .hero-slides .hero-slide .content-hero .button-hero {
+              font-family: 'Roboto', sans-serif;
               border: none;
               margin: 0;
               padding: 0;

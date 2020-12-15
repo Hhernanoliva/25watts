@@ -29,6 +29,7 @@
                             color: #343434;
                             font-size: 40px;
                             line-height: 43px;
+                            font-family: 'Poppins', sans-serif;
                             span{
                                 color: #E0752F;
                             }
@@ -41,7 +42,8 @@
                         text-transform: uppercase;
                     }
                    form{
-                       width: 100%;
+                        font-family: 'Roboto', sans-serif;
+                        width: 100%;
                        .form-control:focus{
                         border-color: #cccccc;
                         -webkit-box-shadow: none;
@@ -59,9 +61,11 @@
                         border-bottom: solid 2px #dce1da;
                         padding: 5px 0;
                         margin: 7px 0;
+                        font-family: 'Roboto', sans-serif;
                         }
                     }
                     button{
+                        font-family: 'Roboto', sans-serif;
                         border: none;
                         margin: 0;
                         padding: 0;
