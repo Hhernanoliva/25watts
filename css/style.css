@@ -173,7 +173,7 @@
 @media (max-width: 767px) {
   .about .about-container {
     padding-top: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     transition: 0.3s; }
     .about .about-container .about-content {
       border-left: #e0752f solid 30px;
@@ -214,6 +214,8 @@ nav {
     width: 128px; }
   nav .content {
     text-align: justify; }
+  nav .ham {
+    display: none; }
   nav .menu {
     border-bottom: solid 1px #e0752f; }
     nav .menu ul {
@@ -319,43 +321,46 @@ nav {
         color: #fff; } }
   @media (max-width: 767px) {
     nav {
+      background-color: #e0752f;
       width: 100%;
-      line-height: 60px; }
+      line-height: 60px;
+      height: 4em; }
       nav .menu-icon {
         line-height: 60px;
         width: 100%;
         padding: 15px 24px;
         display: none; }
       nav .logo {
-        padding: 0px 0px 0 100px; }
-      nav .content {
-        width: 94%;
-        margin: 4em auto;
-        font-size: 20px;
-        line-height: 30px;
-        text-align: justify; }
+        padding: 0px 0px 0 48px; }
+      nav .ham {
+        display: inline;
+        position: absolute;
+        z-index: 1000;
+        top: 20%;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+        border: none;
+        cursor: pointer;
+        background-color: #e0752f;
+        background-image: url("../img/ham.svg");
+        background-size: 100%; }
       nav .menu {
-        border-bottom: solid 1px #e0752f; }
-        nav .menu ul {
-          list-style: none;
-          overflow: hidden;
-          padding: 0;
-          text-align: right;
-          margin: 0;
-          padding-right: 40px;
-          transition: 0.3s; }
-          nav .menu ul li {
-            display: inline-block;
-            padding: 4px 30px; }
-            nav .menu ul li a {
-              display: none;
-              text-decoration: none;
-              color: #fff;
-              font-size: 16px; }
-            nav .menu ul li:hover {
-              border-bottom: solid 2px #e0752f; }
-      nav a:hover {
-        color: #fff; } }
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: solid 1px #e0752f;
+        background: #e0752f;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        transform: translateY(-100%);
+        transition: transform 0.2s ease; }
+      nav .showClose {
+        background-image: url("../img/ham-close.svg"); }
+      nav .showNav {
+        transform: translateY(0); } }
 
 .services {
   background-color: #f2f4f1;
@@ -687,12 +692,9 @@ nav {
           width: 100%; }
   @media (min-width: 992px) {
     .container-contact .bar-color {
-      position: absolute;
-      background-color: #dce1da;
       height: 100%;
       right: 0;
-      top: 0;
-      z-index: 1; }
+      top: 0; }
     .container-contact .container-form {
       position: absolute;
       z-index: 2;
@@ -764,20 +766,11 @@ nav {
             width: 100%; } }
   @media (max-width: 991px) {
     .container-contact .bar-color {
-      position: absolute;
-      background-color: #dce1da;
-      height: 100%;
       right: 0;
-      top: 0;
-      z-index: 1; }
+      top: 0; }
     .container-contact .container-form {
-      position: absolute;
-      z-index: 2;
-      height: 530px;
-      height: 550px;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+      left: 50%; }
       .container-contact .container-form .form-left {
         padding: 0; }
         .container-contact .container-form .form-left .card-form {
@@ -786,44 +779,21 @@ nav {
             padding-bottom: 30px; }
             .container-contact .container-form .form-left .card-form .title h2 {
               letter-spacing: 0.50px;
-              color: #343434;
               font-size: 2.2rem;
               line-height: 40px; }
-              .container-contact .container-form .form-left .card-form .title h2 span {
-                color: #E0752F; }
           .container-contact .container-form .form-left .card-form .error {
-            color: #E0752F;
-            font-size: 14px;
-            margin: 0 0 15px 0;
-            text-transform: uppercase; }
-          .container-contact .container-form .form-left .card-form form {
-            width: 100%; }
-            .container-contact .container-form .form-left .card-form form .form-control:focus {
-              border-color: #cccccc;
-              -webkit-box-shadow: none;
-              box-shadow: none;
-              color: #E0752F;
-              border-bottom: solid 2px #E0752F; }
-              .container-contact .container-form .form-left .card-form form .form-control:focus::placeholder {
-                color: #E0752F; }
-            .container-contact .container-form .form-left .card-form form .form-box {
-              padding: 5px 0;
-              margin: 7px 0; }
+            font-size: 14px; }
+          .container-contact .container-form .form-left .card-form form .form-box {
+            padding: 5px 0;
+            margin: 7px 0; }
           .container-contact .container-form .form-left .card-form button {
-            border: none;
             margin: 0;
             padding: 0;
             width: auto;
-            overflow: visible;
-            background-color: #E0752F;
             color: white;
             font-size: 1rem;
             padding: 14px 40px;
-            margin-top: 40px;
-            border-radius: 25px;
             outline: none !important; }
-            .container-contact .container-form .form-left .card-form button:focus {
-              border: none; }
       .container-contact .container-form .form-right {
         padding: 0;
         height: 100%;
@@ -837,81 +807,28 @@ nav {
             width: 100%; } }
   @media (max-width: 767px) {
     .container-contact .bar-color {
-      position: absolute;
-      background-color: #dce1da;
-      height: 100%;
-      right: 0;
-      top: 0;
-      z-index: 1; }
-    .container-contact .container-form {
-      position: absolute;
-      z-index: 2;
-      height: 530px;
-      height: 550px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-      .container-contact .container-form .form-left {
-        padding: 0; }
-        .container-contact .container-form .form-left .card-form {
-          padding: 40px 80px 80px 80px; }
-          .container-contact .container-form .form-left .card-form .title {
-            padding-bottom: 40px; }
-            .container-contact .container-form .form-left .card-form .title h2 {
-              letter-spacing: 0.55px;
-              color: #343434;
-              font-size: 40px;
-              line-height: 43px; }
-              .container-contact .container-form .form-left .card-form .title h2 span {
-                color: #E0752F; }
-          .container-contact .container-form .form-left .card-form .error {
-            color: #E0752F;
-            font-size: 20px;
-            margin: 0 0 15px 0;
-            text-transform: uppercase; }
-          .container-contact .container-form .form-left .card-form form {
-            width: 100%; }
-            .container-contact .container-form .form-left .card-form form .form-control:focus {
-              border-color: #cccccc;
-              -webkit-box-shadow: none;
-              box-shadow: none;
-              color: #E0752F;
-              border-bottom: solid 2px #E0752F; }
-              .container-contact .container-form .form-left .card-form form .form-control:focus::placeholder {
-                color: #E0752F; }
-            .container-contact .container-form .form-left .card-form form .form-box {
-              width: 100%;
-              border: none;
-              background-color: #f2f4f1;
-              border-bottom: solid 2px #dce1da;
-              padding: 5px 0;
-              margin: 7px 0; }
-          .container-contact .container-form .form-left .card-form button {
-            border: none;
-            margin: 0;
-            padding: 0;
-            width: auto;
-            overflow: visible;
-            background-color: #E0752F;
-            color: white;
-            font-size: 1rem;
-            padding: 15px 50px;
-            margin-top: 40px;
-            border-radius: 25px;
-            outline: none !important; }
-            .container-contact .container-form .form-left .card-form button:focus {
-              border: none; }
-      .container-contact .container-form .form-right {
-        padding: 0;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .container-contact .container-form .form-right .form-img {
-          padding: 0;
-          padding: 0 100px 0 0; }
-          .container-contact .container-form .form-right .form-img img {
-            width: 100%; } }
+      width: 0; }
+    .container-contact .container-form .form-left {
+      padding: 0;
+      width: 100% !important; }
+      .container-contact .container-form .form-left .card-form {
+        padding: 0 !important; }
+        .container-contact .container-form .form-left .card-form .title {
+          padding-bottom: 30px; }
+          .container-contact .container-form .form-left .card-form .title h2 {
+            font-size: 30px;
+            line-height: 40px; }
+        .container-contact .container-form .form-left .card-form .error {
+          font-size: 17px; }
+        .container-contact .container-form .form-left .card-form button {
+          font-size: 1rem;
+          padding: 15px 50px;
+          margin-top: 37px; }
+    .container-contact .container-form .form-right {
+      width: 0;
+      padding: 0; }
+      .container-contact .container-form .form-right .form-img img {
+        width: 0; } }
 
 .footer {
   background-color: #343434;

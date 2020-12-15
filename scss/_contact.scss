@@ -97,12 +97,9 @@
         }
     @include respon(desktop){
         .bar-color{
-            position: absolute;
-            background-color: #dce1da;
             height: 100%;
             right: 0;
             top: 0;
-            z-index: 1;
         }
         .container-form{
             position: absolute; 
@@ -192,21 +189,12 @@
     }
     @include respon(tablet){        
         .bar-color{
-        position: absolute;
-        background-color: #dce1da;
-        height: 100%;
         right: 0;
         top: 0;
-        z-index: 1;
     }
     .container-form{
-        position: absolute; 
-        z-index: 2;
-        height: 530px;
-        height: 550px;
         top: 50%;  
         left: 50%;
-        transform: translate(-50%, -50%);
         .form-left{
             padding: 0;
            .card-form{
@@ -215,53 +203,27 @@
                     padding-bottom: 30px;
                     h2{
                         letter-spacing: 0.50px;
-                        color: #343434;
                         font-size: 2.2rem;
                         line-height: 40px;
-                        span{
-                            color: #E0752F;
-                        }
                     }
                 }
                 .error{
-                    color: #E0752F;
                     font-size: 14px;
-                    margin: 0 0 15px 0;
-                    text-transform: uppercase;
                 }
                form{
-                   width: 100%;
-                   .form-control:focus{
-                    border-color: #cccccc;
-                    -webkit-box-shadow: none;
-                    box-shadow: none;
-                    color: #E0752F;
-                    border-bottom: solid 2px #E0752F;
-                    &::placeholder {
-                        color: #E0752F;
-                    }
-                }
                    .form-box{
                     padding: 5px 0;
                     margin: 7px 0;
                     }
                 }
                 button{
-                    border: none;
                     margin: 0;
                     padding: 0;
                     width: auto;
-                    overflow: visible;
-                    background-color: #E0752F;
                     color: white;
                     font-size: 1rem;
                     padding: 14px 40px;
-                    margin-top: 40px;
-                    border-radius: 25px;
                     outline: none !important;
-                    &:focus{
-                        border: none;
-                    }
                 }
             }
         }
@@ -280,99 +242,43 @@
             }
         }
     }}
-    @include respon(mobile){        
+    @include respon(mobile){
         .bar-color{
-        position: absolute;
-        background-color: #dce1da;
-        height: 100%;
-        right: 0;
-        top: 0;
-        z-index: 1;
-    }
-    .container-form{
-        position: absolute; 
-        z-index: 2;
-        height: 530px;
-        height: 550px;
-        top: 50%;  
-        left: 50%;
-        transform: translate(-50%, -50%);
-        .form-left{
-            padding: 0;
-           .card-form{
-               padding: 40px 80px 80px 80px;
-                .title{
-                    padding-bottom: 40px;
-                    h2{
-                        letter-spacing: 0.55px;
-                        color: #343434;
-                        font-size: 40px;
-                        line-height: 43px;
-                        span{
-                            color: #E0752F;
+            width: 0;
+        }        
+        .container-form{
+            .form-left{
+                padding: 0;
+                width: 100% !important;
+               .card-form{
+                   padding: 0 !important;
+                    .title{
+                        padding-bottom: 30px;
+                        h2{
+                            font-size: 30px;
+                            line-height: 40px;
                         }
                     }
-                }
-                .error{
-                    color: #E0752F;
-                    font-size: 20px;
-                    margin: 0 0 15px 0;
-                    text-transform: uppercase;
-                }
-               form{
-                   width: 100%;
-                   .form-control:focus{
-                    border-color: #cccccc;
-                    -webkit-box-shadow: none;
-                    box-shadow: none;
-                    color: #E0752F;
-                    border-bottom: solid 2px #E0752F;
-                    &::placeholder {
-                        color: #E0752F;
+                    .error{
+                        font-size: 17px;
                     }
-                }
-                   .form-box{
-                    width: 100%;
-                    border: none;
-                    background-color: #f2f4f1;
-                    border-bottom: solid 2px #dce1da;
-                    padding: 5px 0;
-                    margin: 7px 0;
-                    }
-                }
-                button{
-                    border: none;
-                    margin: 0;
-                    padding: 0;
-                    width: auto;
-                    overflow: visible;
-                    background-color: #E0752F;
-                    color: white;
-                    font-size: 1rem;
-                    padding: 15px 50px;
-                    margin-top: 40px;
-                    border-radius: 25px;
-                    outline: none !important;
-                    &:focus{
-                        border: none;
+                    button{
+                        font-size: 1rem;
+                        padding: 15px 50px;
+                        margin-top: 37px;
                     }
                 }
             }
-        }
-        .form-right{
-            padding: 0;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .form-img{
+            .form-right{
+                width: 0;
                 padding: 0;
-                padding: 0 100px 0 0;
-                img{
-                    width: 100%;
+                .form-img{
+                    img{
+                        width: 0;
+                    }
                 }
             }
         }
-    }}
+    }
 }
 

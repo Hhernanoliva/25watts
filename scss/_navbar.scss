@@ -20,6 +20,9 @@ nav{
     .content {
         text-align: justify;
     }
+    .ham{
+        display: none;
+    }
     .menu{
         border-bottom: solid 1px #e0752f ;
         ul {
@@ -161,9 +164,10 @@ nav{
     }
     //MOBILE
     @include respon(mobile){ 
+        background-color: #e0752f;
         width: 100%;
         line-height: 60px;
-    
+        height: 4em;
         .menu-icon {
             line-height: 60px;
             width: 100%;
@@ -171,49 +175,81 @@ nav{
             display: none;
         }
         .logo {
-            padding: 0px 0px 0 100px;
+            padding: 0px 0px 0 48px;
         }
-        
-        .content {
-            width: 94%;
-            margin: 4em auto;
-            font-size: 20px;
-            line-height: 30px;
-            text-align: justify;
-        }
-        
-        .menu{
+        .ham {
+            display: inline;
+            position: absolute;
+            z-index: 1000;
+            top: 20%;
+            right: 20px;
+            width: 36px;
+            height: 36px;
+            border: none;
+            cursor: pointer;
+            background-color: #e0752f;
+            background-image: url("../img/ham.svg");
+            background-size: 100%;
+          }
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
             border-bottom: solid 1px #e0752f ;
-            ul {
-                // line-height: 60px;
-                list-style: none;
-                overflow: hidden;
-                padding: 0;
-                text-align: right;
-                margin: 0;
-                padding-right: 40px;
-                transition: 0.3s;
-                
-                li {
-                    
-                    display: inline-block;
-                    padding: 4px 30px;
-                    a {
-                        display: none; ///// CORREGIR //////////////
-                        text-decoration: none;
-                        color: #fff;
-                        font-size: 16px;
-                    }
-                    &:hover {
-                        border-bottom: solid 2px #e0752f;
-                    }
-                }
-            }
-        }
+            background: #e0752f;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+            transform: translateY(-100%);
+            transition: transform 0.2s ease;
+          }
+          .showClose {
+            background-image: url("../img/ham-close.svg");
+          }
+          .showNav {
+            transform: translateY(0);
+          }
+        // .content {
+        //     width: 94%;
+        //     margin: 4em auto;
+        //     font-size: 20px;
+        //     line-height: 30px;
+        //     text-align: justify;
+        // }
         
-        a:hover {
-            color: #fff;
-        }
+        // .menu{
+        //     border-bottom: solid 1px #e0752f ;
+        //     ul {
+        //         // line-height: 60px;
+        //         list-style: none;
+        //         overflow: hidden;
+        //         padding: 0;
+        //         text-align: right;
+        //         margin: 0;
+        //         padding-right: 40px;
+        //         transition: 0.3s;
+                
+        //         li {
+                    
+        //             display: inline-block;
+        //             padding: 4px 30px;
+        //             a {
+        //                 display: none; ///// CORREGIR //////////////
+        //                 text-decoration: none;
+        //                 color: #fff;
+        //                 font-size: 16px;
+        //             }
+        //             &:hover {
+        //                 border-bottom: solid 2px #e0752f;
+        //             }
+        //         }
+        //     }
+        // }
+        
+        // a:hover {
+        //     color: #fff;
+        // }
     }    
 }
 
