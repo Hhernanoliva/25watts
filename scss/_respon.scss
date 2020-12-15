@@ -3,9 +3,9 @@
       @media (min-width: 992px) { @content; }
     }
     @else if $point == tablet {
-      @media (min-width: 768px)  { @content; }
+      @media (max-width: 991px)  { @content; }
     }
     @else if $point == mobile {
-      @media (min-width: 576px)  { @content; }
+      @media (max-width: 767px)  { @content; }
     }
   }

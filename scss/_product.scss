@@ -1,3 +1,4 @@
+@import './respon';
 .product{
     height: 100vh;
     position: relative;
@@ -21,16 +22,73 @@
         width: 700px;
         height: 400px;
     }
-    //DESKTOP
+    // //DESKTOP
     @include respon(desktop){ 
-
+            .product-left{
+                padding: 0;
+            }
+            .product-right{
+                background-position: left; 
+                background-repeat: no-repeat; 
+                background-size: cover;
+                height: 100%;
+                padding: 0;
+            }
+            .container-product{
+                position: absolute;
+                top: 50%;  
+                left: 30%;
+                transform: translate(-50%, -50%);
+                width: 700px;
+                height: 400px;
+            }
+        
     }
     //TABLET
     @include respon(tablet){ 
-
+            .product-left{
+                padding: 0;
+                width: 30%;
+            }
+            .product-right{
+                width: 70%;
+                background-position: right; 
+                background-repeat: no-repeat; 
+                background-size: cover;
+                height: 100%;
+                padding: 0;
+            }
+            .container-product{
+                position: absolute;
+                top: 40%;  
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 700px;
+                height: 400px;
+            }
+        
     }
     //MOBILE
     @include respon(mobile){ 
-        
+            .product-left{
+                padding: 0;
+                width: 0;
+            }
+            .product-right{
+                width: 100%;
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover;
+                height: 100%;
+                padding: 0;
+            }
+            .container-product{
+                position: absolute;
+                top: 40%;  
+                left: 50%;
+
+                width: 700px;
+                height: 400px;
+            }
     }
 }
