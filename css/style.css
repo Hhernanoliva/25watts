@@ -95,10 +95,9 @@
             box-shadow: 0px 4px 24px #DCE1DAE6;
             padding: 0 5px;
             border-bottom: solid 8px #e0752f;
-            margin: 0 12.5px 50px 12.5px;
-            width: 550px;
-            height: 180px;
-            background-color: #fff; }
+            margin: 0 12.5px 20px 12.5px;
+            background-color: #fff;
+            width: 350px; }
           .about-cards .container-maincard .container-cards img {
             margin-top: 0px;
             padding-bottom: 20px;
@@ -824,7 +823,7 @@ nav {
       padding: 0;
       width: 100% !important; }
       .container-contact .container-form .form-left .card-form {
-        padding: 0 !important; }
+        padding: 0 0 0 20px !important; }
         .container-contact .container-form .form-left .card-form .title {
           padding-bottom: 30px; }
           .container-contact .container-form .form-left .card-form .title h2 {
@@ -857,6 +856,21 @@ nav {
       margin: 0; }
   .footer .logo-footer {
     padding: 0 80px; }
+  @media (max-width: 767px) {
+    .footer {
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .footer .copyright {
+        margin: 0;
+        padding: 0 0 0 30px;
+        color: #dce1da; }
+        .footer .copyright p {
+          font-size: 0.8rem;
+          margin: 0; }
+      .footer .logo-footer {
+        padding: 0 50px 0 0; } }
 
 .hero {
   width: 100%;

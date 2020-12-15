@@ -16,16 +16,30 @@
     .logo-footer{
         padding: 0 80px;
     }
-    // //DESKTOP
-    // @include respon(desktop){ 
+    //DESKTOP
+    @include respon(desktop){ 
+    }
+    //TABLET
+    @include respon(tablet){ 
 
-    // }
-    // //TABLET
-    // @include respon(tablet){ 
-
-    // }
-    // //MOBILE
-    // @include respon(mobile){ 
-        
-    // }
+    }
+    //MOBILE
+    @include respon(mobile){ 
+            height: 70px;;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .copyright{
+                margin: 0;
+                padding: 0 0 0 30px;
+                color: #dce1da;
+                p{
+                    font-size: 0.8rem;
+                    margin: 0;
+                }
+            }
+            .logo-footer{
+                padding: 0 50px 0 0;
+            }
+        }
 }
